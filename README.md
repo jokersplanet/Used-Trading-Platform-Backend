@@ -1,1 +1,0 @@
-# Used-Trading-Platform
