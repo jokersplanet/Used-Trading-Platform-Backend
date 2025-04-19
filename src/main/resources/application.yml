@@ -1,0 +1,25 @@
+# 公共配置文件
+spring:
+  application:
+    name: Used-Trading-Platform-Backend
+  # 默认 dev 环境
+  profiles:
+    active: dev
+    # 支持 swagger3
+  mvc:
+    path match:
+      matching-strategy: ant_path_matcher
+  #数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/usedtradingplatform
+    username: root
+    password: gjk20011005
+server:
+  address: 0.0.0.0
+  port: 8080
+  servlet:
+    # cookie 30 天过期
+    session:
+      cookie:
+        max-age: 2592000
